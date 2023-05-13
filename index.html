@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll animation</title>
+</head>
+<style>
+    .center-align {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .first-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        overflow: hidden;
+    }
+
+
+    .container-help {
+        height: 300px;
+        width: 300px;
+        background-color: aquamarine;
+        overflow: hidden;
+        transition: 0.5s ease;
+        background-position: center;
+    }
+
+    .container-help:nth-of-type(even) {
+        transform: translateX(-500%);
+    }
+
+    .container-help:nth-of-type(odd) {
+        transform: translate(500%);
+    }
+
+
+    .container-help.show {
+        transform: translateX(0) !important;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+    }
+
+    .image {
+        height: 300px;
+        width: 300px;
+        background-position: center;
+    }
+</style>
+
+<body>
+    <h1>Random image</h1>
+    <div class="first-box">
+        <div class="image"></div>
+        <div class="container-help center-align flex show">1</div>
+        <div class="container-help center-align flex">2</div>
+        <div class="container-help center-align flex">3</div>
+        <div class="container-help center-align flex">4</div>
+        <div class="container-help center-align flex">5</div>
+        <div class="container-help center-align flex">6+1</div>
+        <div class="container-help center-align flex">6+2</div>
+        <div class="container-help center-align flex">6+3</div>
+        <div class="container-help center-align flex">6+4</div>
+        <div class="container-help center-align flex">6+5</div>
+        <div class="container-help center-align flex">6+6</div>
+        <div class="container-help center-align flex">6+7</div>
+    </div>
+    <script src="./script.js"></script>
+    <script>
+        const imgDiv = document.querySelector(".image");
+        imgDiv.style.backgroundImage = "url('https://picsum.photos/300/300')"
+    </script>
+</body>
+
+</html>
