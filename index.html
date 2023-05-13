@@ -19,6 +19,8 @@
 
     body {
         background-color: black;
+        background-image: url('./image_url.jpg');
+        background-position: center;
     }
 
     .first-box {
@@ -33,11 +35,13 @@
 
     .container-help {
         height: 300px;
-        width: 300px;
+        width: 500px;
         background-color: aquamarine;
         overflow: hidden;
         transition: 0.5s ease;
         background-position: center;
+        border-radius: 20px;
+        cursor: pointer;
     }
 
     .container-help:nth-of-type(even) {
@@ -56,37 +60,28 @@
     h1 {
         color: white;
         text-align: center;
-    }
-
-    .image {
-        height: 300px;
-        width: 300px;
-        background-position: center;
+        padding: 20px 0;
     }
 </style>
 
 <body>
     <h1>Random image</h1>
     <div class="first-box">
-        <div class="image"></div>
-        <div class="container-help center-align flex show">1</div>
-        <div class="container-help center-align flex">2</div>
-        <div class="container-help center-align flex">3</div>
-        <div class="container-help center-align flex">4</div>
-        <div class="container-help center-align flex">5</div>
-        <div class="container-help center-align flex">6+1</div>
-        <div class="container-help center-align flex">6+2</div>
-        <div class="container-help center-align flex">6+3</div>
-        <div class="container-help center-align flex">6+4</div>
-        <div class="container-help center-align flex">6+5</div>
-        <div class="container-help center-align flex">6+6</div>
-        <div class="container-help center-align flex">6+7</div>
+        <div class="container-help"></div>
+        <div class="container-help center-align flex"></div>
+        <div class="container-help center-align flex"></div>
+        <div class="container-help center-align flex"></div>
+        <div class="container-help center-align flex"></div>
+        <div class="container-help center-align flex"></div>
+        <div class="container-help center-align flex"></div>
+        <div class="container-help center-align flex"></div>
+        <div class="container-help center-align flex"></div>
+        <div class="container-help center-align flex"></div>
+        <div class="container-help center-align flex"></div>
+        <div class="container-help center-align flex"></div>
+        <div class="container-help center-align flex"></div>
     </div>
-    <script src="./script.js"></script>
-    <script>
-        const imgDiv = document.querySelector(".image");
-        imgDiv.style.backgroundImage = "url('https://picsum.photos/300/300')"
-    </script>
+    <script src="./script2.js"></script>
 </body>
 
 </html>
