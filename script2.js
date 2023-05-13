@@ -14,8 +14,14 @@ async function fetchingImgURL(url) {
 
 
 async function image2div() {
-    url = "https://picsum.photos/500/300"
+    const width = containerBox[0].clientWidth
+    const height = containerBox[0].clientHeight
+    // const windowWidth = Number(window.innerWidth * 0.)
+    // console.log("--->", windowWidth);
+    url = `https://picsum.photos/${width}/${height}`
     for (let divEle of containerBox) {
+
+
         imagURL = await fetchingImgURL(url)
         imagURL = imagURL.url
         if (imagURL != "") {
@@ -46,3 +52,4 @@ function scrollAnimation() {
         }
     })
 }
+
