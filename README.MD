@@ -1,12 +1,17 @@
 # Scroll-animation--Random-Image
 
 This repository contains a simple web page that demonstrates a scroll animation effect with random images. As you scroll down the page, the images will fade in and out based on their visibility in the viewport.
+# 
 
 <!-- ## Preview
 
   ![Scroll-animation--Random-Image Preview](preview.gif) 
   
 -->
+## Project links
+## [⏭➡Live](https://scroll-animation-random-image.netlify.app/)
+
+<br>
 
 ## Getting Started
 
